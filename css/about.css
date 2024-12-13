@@ -1,0 +1,124 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.about-video video {
+  width: 400px;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 5px 15px rgba(252, 252, 252, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-video video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ff6f61;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f3f1ec;
+  margin-top: 2rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-text hr {
+  border: none;
+  border-top: 2px solid #444;
+  margin: 1.5rem 0;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .video {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-video video {
+    width: 80%;
+    height: auto;
+  }
+
+  .about-content {
+    width: 90%;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-video video {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-text p {
+    font-size: 0.85rem;
+  }
+}

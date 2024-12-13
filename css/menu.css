@@ -1,0 +1,219 @@
+
+.menu-section {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+ 
+
+.menu-heading h1 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  color: #ff7f50;
+}
+
+.menu-heading p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  }
+}
+
+.menu-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu-box:hover {
+  transform: translateY(-5px);
+}
+
+.menu-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.menu-box h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.menu-box p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.menu-box button {
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.menu-box button:hover {
+  background: #ff5722;
+}
+
+
+/* Genel Modal Ayarları */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Arkaplan karartması */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal İçeriği */
+.modal-content {
+  background: #ffffff; /* Beyaz arkaplan */
+  border-radius: 12px;
+  padding: 2rem;
+  width: 60%;
+  max-height: 80%;
+  overflow-y: auto; /* Kaydırma */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Hafif gölge */
+  position: relative;
+}
+
+/* Kapat Butonu */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff7f50;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #ff5722;
+}
+
+/* Modal Başlık */
+.modal-body h2 {
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dddddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Menü Öğeleri */
+.modal-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-body ul li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 40px 1fr 80px; /* İkon, içerik ve fiyat düzeni */
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-body ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* İkon */
+.modal-body ul li .icon {
+  font-size: 1.5rem;
+  color: #ff7f50; 
+  text-align: center;
+}
+
+/* İçerik */
+.modal-body ul li .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-body ul li .content strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.modal-body ul li .content small {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+.modal-body ul li .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+ 
+}
+
+.modal-body ul li .price span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  gap: 10px; 
+  white-space: nowrap;
+}
+
+.modal-body ul li .price span i {
+  margin-left: 5px; /* İkon ve fiyat arasında boşluk */
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-body ul li {
+    grid-template-columns: 30px 1fr 60px; /* Mobilde düzeni daralt */
+  }
+}

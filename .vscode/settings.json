@@ -1,0 +1,5 @@
+{
+    "better-comments.highlightPlainText": true,
+    "notebook.defaultFormatter": "aaron-bond.better-comments",
+    "editor.defaultFormatter": "aaron-bond.better-comments"
+}

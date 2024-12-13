@@ -1,0 +1,131 @@
+
+.service {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+.service-title {
+    margin: 2rem 0;
+    width: 70%;
+}
+
+.service-title * {
+    text-align: center;
+    
+}
+
+.service-title h4 {
+    text-transform: none;
+    color: #f9f0f080;
+    margin-top: 3rem;
+    
+}
+
+.service-title h2 {
+    text-transform: uppercase;
+    margin-top: 5rem;
+    opacity: 0.95;
+    color: #f0e4e4;
+}
+
+.service-text {
+    padding: 1.4rem 0;
+    max-width: 70%;
+    margin: auto;
+}
+
+.service-item {
+    font-size: 1.05rem;
+    background-color: var(--persimmon);
+    color: #fffefe;
+    margin: 2.6rem;
+    padding: 1.6rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba()68, 68, 68, 0.75;
+    transform-style: preserve-3d;
+
+}
+
+
+
+.service-img  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    transform: translateZ(60px) translateY(-10px);
+    object-fit: cover;
+}
+
+.service-item h4 {
+    margin-top: 0.8rem;
+}
+
+.service-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #313131;
+    background: #fff;
+    border: 2px solid #ffffff;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 0.7rem;
+    
+}
+.service-button:hover {
+    border-color: #151515;
+    background: transparent;
+}
+
+
+/*Service page*/
+
+
+@media screen and (max-width: 400px) {
+    .service {
+        max-width: 95vw;
+    }
+    .service-item {
+        margin: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    
+    .service-item {
+        width: 400px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .service-item {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .service-item {
+        width: auto;
+    }
+}
+
+

@@ -1,0 +1,107 @@
+.slick {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/bg-img.jpg") center/cover fixed; /* Arkaplan resmi */
+  
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 4rem;
+  
+ 
+}
+.screen-title h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  color: #ff7f50;
+  text-align: center;
+}
+
+
+
+.screen-wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; 
+
+}
+
+.single-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.single-item {
+  text-align: center;
+  color: #fff;
+  padding: 9rem;
+}
+
+
+
+.single-item .p {
+  
+  font-size: 1.2rem;
+  margin-top: 1rem;
+ 
+}
+
+.single-item span {
+  color: #9657b0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+
+.single-item .slick-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.single-item .slick-icons i {
+  color: #ffd700; /* Yıldız rengi */
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .screen {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .single-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .single-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .single-item span {
+    font-size: 0.9rem;
+  }
+
+  .single-item p {
+  
+    font-size: 0.8rem;
+  }
+}

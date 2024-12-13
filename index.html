@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <title>Kebaben Sandnes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!--Slick slider css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick.css"
+    />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-top">
+        <a href="index.html" class="navbar-logo">
+          <img src="images/kebabenlogo.png" alt="Kebaben Logo" />
+        </a>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">hjem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">meny</a>
+          </li>
+          <li class="nav-item">
+            <a href="#bestilling" class="nav-link">Bestilling</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">anmeldelser</a>
+          </li>
+          <li class="nav-item">
+            <a href="#blogger" class="nav-link">blogger</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!--Main-->
+    <main class="main">
+      <!-- Header -->
+
+      <section class="header">
+        <!-- bg video -->
+        <video autoplay muted loop id="bg-video">
+          <source src="/images/homevideo.mp4" type="video/mp4" />
+          <track
+            src="captions_en.vtt"
+            kind="captions"
+            srclang="en"
+            label="english_captions"
+          />
+        </video>
+        <!-- end of bg video -->
+
+        <div class="container">
+          <!-- hero section -->
+          <div class="hero-content">
+            <div class="hero-content-change">
+              <div>
+                <span>
+                  <i class="fa-solid fa-utensils"></i>
+                </span>
+                <h3>
+                  <div class="line"></div>
+                  <span>alltid full rulle</span>
+                  <div class="line"></div>
+                </h3>
+                <h1 class="hero-lg-text">fresk, varm og uforglemmelig smak!</h1>
+              </div>
+            </div>
+
+            <blockquote class="hero-quote">
+              <span>
+                <i class="fas fa-quote-left"></i>
+              </span>
+              For oss handler alt om ekte kvalitet – ferske råvarer, varme
+              håndlagde brød og uforglemmelige smaker. Ta en titt på menyene
+              våre og start din smaksreise!
+              <span>
+                <i class="fas fa-quote-right"></i>
+              </span>
+            </blockquote>
+            <div type="button" class="hero-btn">
+              <a href="#menu">oppdag vår meny</a>
+            </div>
+          </div>
+          <!-- end of hero section -->
+        </div>
+      </section>
+      <!-- End of header -->
+
+      <!--about us -->
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="video">
+            <div class="about-video">
+              <video autoplay muted loop>
+                <source src="/images/about-video.mp4" type="video/mp4" />
+                <track
+                  src="captions_en.vtt"
+                  kind="captions"
+                  srclang="en"
+                  label="english_captions"
+                />
+              </video>
+            </div>
+            <div class="about-video">
+              <video autoplay muted loop>
+                <source src="/images/about-brød-video.mp4" type="video/mp4" />
+                <track
+                  src="captions_en.vtt"
+                  kind="captions"
+                  srclang="en"
+                  label="english_captions"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Om Oss</h2>
+              <h3>Historien om ekte smak</h3>
+              <p>
+                Restauranten ble grunnlagt i
+                <span style="color: #ff6f61; font-weight: bold">1992</span>,
+                midt i hjertet av Sandnes, og ble raskt et populært sted for
+                fersk og rask servering. I 2022 ble den overtatt av Durali Celik
+                og Hasan Zorlu fra Recep Bugurcu, og den fortsetter å vokse med
+                innovasjon samtidig som den holder fast på sine tradisjoner.
+                Gjennom årene har dette stedet blitt en favoritt blant folk i
+                Sandnes, kjent for sine store kebabruller og unike smak. Vi er
+                stolte av å videreføre denne smakstradisjonen.
+              </p>
+              <hr />
+
+              <h3>Kvalitet og ferskhet: Våre kjøttprodukter</h3>
+              <p>
+                Grunnlaget for vår smak er kjøttet, som vi nøye henter fra den
+                pålitelige leverandøren
+                <span style="color: #ff6f61; font-weight: bold">Gappas</span>.
+                Hver dag forberedes kjøttet til kebab og tilberedes med stor
+                omhu. Våre varme, ferske og deilige kebaber skjæres foran
+                kundene og serveres med stolthet. Hver bit er en refleksjon av
+                vår innsats og kvalitet.
+              </p>
+
+              <hr />
+              <h3>Ferskt brød til alle dagens måltider</h3>
+              <p>
+                Brødet som kronen på kebaben vår blir laget med stor omhu hver
+                dag. Deilige
+                <span style="color: #ff6f61; font-weight: bold"
+                  >Lefser og Pita-brøddeiger</span
+                >
+                forberedes dagen før og heves før de bakes ferske om morgenen.
+                Denne daglige rutinen sikrer at vi kan tilby deg det ferskeste
+                og mest smakfulle brødet. Ferskhet er vår styrke!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--end of about us -->
+
+      <!--Menu section -->
+
+      <section id="menu" class="menu-section">
+        <div class="menu-heading">
+          <h1>Meny</h1>
+          <p>Velg din favoritt blant våre ulike retter</p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Kebab Card -->
+          <div class="menu-box" onclick="openPage('kebab')">
+            <img
+              src="images/kebabtallerken.webp"
+              alt="Kebab"
+              class="menu-image"
+            />
+            <h2>Kebab</h2>
+            <p>Smakfulle kebaber i rull eller på tallerken.</p>
+            <button>Se Kebab</button>
+          </div>
+
+          <!-- Hamburger Card -->
+          <div class="menu-box" onclick="openPage('hamburger')">
+            <img
+              src="images/hamburger.webp"
+              alt="Hamburger"
+              class="menu-image"
+            />
+            <h2>Hamburger</h2>
+            <p>Klassiske burgere med ferske ingredienser.</p>
+            <button>Se Hamburger</button>
+          </div>
+
+          <!-- Vegan Card -->
+          <div class="menu-box" onclick="openPage('vegan')">
+            <img src="images/falafel.webp" alt="Vegan" class="menu-image" />
+            <h2>Vegan</h2>
+            <p>Falafel og andre veganske favoritter.</p>
+            <button>Se Vegan</button>
+          </div>
+
+          <!-- Tilbehør Card -->
+          <div class="menu-box" onclick="openPage('tilbehør')">
+            <img src="images/bonfri.webp" alt="Tilbehør" class="menu-image" />
+            <h2>Tilbehør</h2>
+            <p>Kompletter måltidet med noe ekstra.</p>
+            <button>Se Tilbehør</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <button class="close-btn" onclick="closePage()">Tilbake</button>
+          <div class="modal-body" id="modal-body">
+            <!-- Dinamically loaded content goes here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Menu section -->
+
+      <!-- Service SECTION-->
+      <section class="service" id="bestilling">
+        <div class="service-title">
+          <h2>Bestill mat enkelt hos oss!</h2>
+          <h4>
+            Vi tilbyr flere måter å nyte ditt favorittmåltid på. Velg mellom
+            hjemlevering via våre samarbeidspartnere eller takeaway direkte fra
+            oss. Gjør ditt valg og nyt maten på den som passer deg best!
+          </h4>
+        </div>
+        <div class="service-grid">
+          <div class="service-item" data-tilt data-tilt data-tilt-scale="1.1">
+            <span>
+              <i class="fa fa-queto-left"></i>
+            </span>
+            <h4>WOLT</h4>
+            <p class="service-text">
+              Få maten levert rett hjem med Wolt! Bestill via appen, og vi tar
+              oss av resten.
+            </p>
+            <div class="service-img">
+              <img src="images/wolt.webp" alt="wolt logo" />
+            </div>
+            <a
+              href="https://wolt.com/nb/nor/sandnes/restaurant/kebaben-sandnes?srsltid=AfmBOopYb336r6jdpkJnu-uvyvKtaG3oomajal67x_vUrGgH16k7-Odr"
+              class="service-button"
+            >
+              Bestill nå
+            </a>
+          </div>
+          <!-- 2.card -->
+
+          <div class="service-item" data-tilt data-tilt data-tilt-scale="1.1">
+            <span>
+              <i class="fa fa-queto-left"></i>
+            </span>
+            <h4>FOODORA</h4>
+            <p class="service-text">
+              Bestill gjennom Foodora for rask og smidig levering til ønsket
+              adresse
+            </p>
+            <div class="service-img">
+              <img src="images/foodora.webp" alt="Foodora Logo" />
+            </div>
+            <a
+              href="https://www.foodora.no/restaurant/l5j2/sandnes-kebab"
+              class="service-button"
+            >
+              Bestill nå
+            </a>
+          </div>
+
+          <!--3.card-->
+          <div class="service-item" data-tilt data-tilt data-tilt-scale="1.1">
+            <span>
+              <i class="fa fa-queto-left"></i>
+            </span>
+            <h4>TAKEAWAY</h4>
+            <p class="service-text">
+              Ring oss, bestill din mat, og hent den når det passer deg. Enkelt
+              og effektivt!
+            </p>
+            <div class="service-img">
+              <img src="images/takeaway.webp" alt="takeaway" />
+            </div>
+
+            <span class="service-button">
+              <i class="fa-solid fa-phone"></i>
+              +47 911 691 159
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of service section-->
+
+      <!--Reviews slick slider -->
+
+      <section class="slick" id="reviews">
+        <div class="screen">
+          <div class="screen-title">
+            <h2>Reviews</h2>
+          </div>
+          <div class="screen-wrapper">
+            <!--single item -->
+
+            <div class="single-item">
+              <img src="images/person2.jpg" alt="customer" />
+              <span>David Hall</span>
+              <p>
+                Kebaben in Sandnes is a late-night food staple after the bar,
+                pub, or club in Sandnes. Their staff are very polite, they are
+                impressively efficient (i.e., quick when the bars let out), and
+                the food is very nice. I have tried burgers and wraps, andl was
+                always happy.
+              </p>
+              <div class="slick-icons">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+              </div>
+            </div>
+            <!--single item end -->
+
+            <!--single item -->
+            <div class="single-item">
+              <img src="images/person2.jpg" alt="customer" />
+              <span>Tor Magne Steinsvåg</span>
+              <p>
+                Som Natteravn opplever at de som jobber der,kommer ut med drikke
+                til oss mens vi våker over plassen der de er. Takker de for det.
+                Vi setter stor pris på det.
+              </p>
+              <div class="slick-icons">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+              </div>
+            </div>
+
+            <!--single item end -->
+            <!-- single item -->
+            <div class="single-item">
+              <img src="images/person2.jpg" alt="customer" />
+              <span>Anders J. Anderssen</span>
+              <p>
+                Har du med deg en pyse som ikke torr å smake kebab. Kan du kjøpe
+                burger her også, gå ikke glipp av den beste rullekebab eller
+                kebabtallerken , begge smaker veldig bra.
+              </p>
+              <div class="slick-icons">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+              </div>
+            </div>
+
+            <!--single item end -->
+
+            <!--single item -->
+            <div class="single-item">
+              <img src="images/person2.jpg" alt="person image" />
+              <span>Michael Ueland</span>
+              <p>
+                Dette er Stavangers storste og beste kebab. Har aldri sett
+                liknende til storrelse på en kebab. Jeg måtte bruge begge hender
+                og klarte fortsatt ikke å holde rundt han. Anbefales på det
+                aller sterkeste. Hadde vært en attraksjon hadde han ligget i
+                Oslo. PS fikk neste kjeven ut av ledd.
+              </p>
+              <div class="slick-icons">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+              </div>
+            </div>
+            <!-- end of single item -->
+
+            <!--single item -->
+            <div class="single-item">
+              <img src="images/person2.jpg" alt="customer" />
+              <span>Daniel Stølsvik Revne</span>
+              <p>
+                Jeg skulle ikke ha noe engang og jeg følte meg hjemme. Veldig
+                koselige og gøyale folk som ikke er redd for å tulle litt.
+              </p>
+              <div class="slick-icons">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="1"></i>
+              </div>
+            </div>
+            <!--single item end -->
+          </div>
+        </div>
+      </section>
+
+      <!--End of reviews slick slider-->
+
+      <!-- blog page -->
+
+      <section class="blog-container" id="blogger">
+        <h1>Restaurant Blog</h1>
+        <section class="blog-list">
+          <article class="blog-post">
+            <img src="images/blog1.webp" alt="32 år i Sandnes" />
+            <h2>32 år i Sandnes.Nå vil de åpne i Stavanger.</h2>
+            <p>
+              <a
+                href="https://www.rastavanger.no/32-ar-i-sandnes-na-vil-de-apne-i-stavanger/s/5-165-31732"
+                >Klikk her</a
+              >
+              for å lese nyheten.
+            </p>
+            <a
+              href="https://www.rastavanger.no/32-ar-i-sandnes-na-vil-de-apne-i-stavanger/s/5-165-31732"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+
+          <article class="blog-post">
+            <img
+              src="images/blog2.webp"
+              alt="Solgte over 2000 kebaber under jubileet mandag"
+            />
+            <h2>Solgte over 2000 kebaber under jubileet mandag.</h2>
+            <p>
+              <a
+                href="https://www.aftenbladet.no/aktuelt/i/MRW85m/her-staar-folk-i-koe-for-aa-faa-seg-kebab-det-var-helt-kaos"
+                >Klikk her</a
+              >
+              for å lese nyheten.
+            </p>
+            <a
+              href="https://www.aftenbladet.no/aktuelt/i/MRW85m/her-staar-folk-i-koe-for-aa-faa-seg-kebab-det-var-helt-kaos"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+
+          <article class="blog-post">
+            <img src="images/blog3.webp" alt="tvvest video" />
+            <h2>Fire samarbeidspartnere til forlenger med de lyseblå!</h2>
+            <p>
+              <a
+                href="https://video.tvvest.no/sandnesgauken-i-lange-koer-for-jubileums-kebab"
+                >Klikk her</a
+              >
+              for å se videoen.
+            </p>
+            <a
+              href="https://video.tvvest.no/sandnesgauken-i-lange-koer-for-jubileums-kebab"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+
+          <article class="blog-post">
+            <img src="images/blog4.webp" alt="Sandnes Posten" />
+            <h2>Ali og Hasan kan servere over et tonn kjøtt i uka</h2>
+            <p>
+              <a
+                href="https://www.sandnesposten.no/ali-og-hasan-kan-servere-over-et-tonn-kjott-i-uka/f/5-105-793661"
+                >Klikk her</a
+              >
+              for å lese nyheten.
+            </p>
+            <a
+              href="https://www.sandnesposten.no/ali-og-hasan-kan-servere-over-et-tonn-kjott-i-uka/f/5-105-793661"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+
+          <article class="blog-post">
+            <img src="images/blog5.webp" alt="Dette er vinnen" />
+            <h2>Sandnesposten har testet byens kebaber - Dette er vinneren.</h2>
+            <p>
+              <a
+                href="https://www.sandnesposten.no/sandnesposten-har-testet-byens-kebaber-dette-er-vinneren/s/5-105-1025279"
+                >Klikk her</a
+              >
+              for å lese nyheten.
+            </p>
+            <a
+              href="https://www.sandnesposten.no/sandnesposten-har-testet-byens-kebaber-dette-er-vinneren/s/5-105-1025279"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+
+          <article class="blog-post">
+            <img src="images/blog6.webp" alt="Over hele landet" />
+            <h2>Over hele landet skal Sandnes Kebab mette sultne mager.</h2>
+            <p>
+              <a
+                href="https://www.sandnesposten.no/nyheter/sandnes-kebab/naringsliv/millionsuksess/s/5-105-48614"
+                >Klikk her</a
+              >
+              for å lese nyheten.
+            </p>
+            <a
+              href="https://www.sandnesposten.no/nyheter/sandnes-kebab/naringsliv/millionsuksess/s/5-105-48614"
+              class="read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </article>
+        </section>
+      </section>
+
+      <!-- Blog Page -->
+
+      <!-- Contact-->
+
+     
+          
+        <section class="contact-section" id="contact">
+          <div class="contact-bg">
+            <h2>Kontakt Oss</h2>
+            <div class="line">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        <div class="contact-body">
+          <div class="contact-info">
+            <div>
+              <span><i class="fas fa-mobile-alt"></i></span>
+              <span>Telefonnummer.</span>
+              <span class="text"> 51 62 95 51</span>
+            </div>
+            <div>
+              <span><i class="fas fa-envelope-open"></i></span>
+              <span>E-post</span>
+              <span class="text">kebabensandnes@gmail.com</span>
+            </div>
+            <div>
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span>Address</span>
+              <span class="text"
+                >Kirkegata 2, 4307 Sandnes</span
+              >
+            </div>
+            <div>
+              <span><i class="fas fa-clock"></i></span>
+              <span>Åpningstider</span>
+              <span class="text">Mandag–Torsdag (11.00–00.00)
+                Fredag–Lørdag (11.00–04.00)
+                Søndag (11.00–00.00)</span>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Fornavn"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Etternavn"
+                />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="E-post" />
+                <input type="text" class="form-control" placeholder="Telefon" />
+              </div>
+              <textarea
+                rows="5"
+                placeholder="Melding"
+                class="form-control"
+              ></textarea>
+              <input type="submit" class="send-btn" value="send melding" />
+            </form>
+
+            <div>
+              <img src="images/contact-png.png" alt="contact image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.475849970651!2d5.735692299999998!3d58.8521369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3659c7159d31%3A0xca743f001c305217!2sKebaben!5e1!3m2!1str!2sno!4v1734046417397!5m2!1str!2sno" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></>"
+            width="100%"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Contact End-->
+    </main>
+    <!-- End of main-->
+
+    <!--Footer -->
+    <footer class="footer">
+      <div class="contact-footer">
+        <h3>Følg Oss</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61566582863885" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="mailto:kebabensandnes@gmail.com" class="fas fa-envelope-open"></a>
+         
+        </div>
+        <p>© 1992 Sandnes Kebaben. Alle rettigheter reservert.</p>
+      </div>
+    </footer>
+
+    <!--Footer  end-->
+
+    <!-- Script-->
+
+    <!-- jQuery reviews-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery reviews end-->
+
+    <!-- service slick slider-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/tilt.jquery.js"></script>
+    <!-- service slick slider end-->
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <!--jQuery reviews-->
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
