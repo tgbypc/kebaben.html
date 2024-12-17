@@ -1,5 +1,5 @@
 .about-container {
-  min-height: 100vh;
+  min-height: var(--header-min-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 4rem;
+  
 }
 
 .about-video video {
@@ -30,27 +30,41 @@
 
 .about-content {
   flex: 1;
+  max-width: 50%;
 }
 
-.about-text h2 {
+.about-heading {
+  margin-top: 2rem; 
+  position: relative; 
+  top: 5rem; 
+}
+.about-heading h2 {
   font-weight: 700;
-  font-size: 2.5rem;
-  color: #ff6f61;
-  text-align: left;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--red-primary);
+  text-align: center;
+  text-transform: capitalize;
+ 
+}
+
+.about-heading p {
+  color: var(--white-tertiary);
+  text-align: center;
+  font-size: 1rem;
+ 
 }
 
 .about-text h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #f3f1ec;
+  color: var(--white-primary);
   margin-top: 2rem;
 }
 
 .about-text p {
   font-size: 1rem;
   font-weight: 400;
-  color: #ccc;
+  color: var(--white-tertiary);
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }

@@ -1,12 +1,12 @@
 .contact-bg {
-  height: 40vh;
+  height: 30vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(/images/contact-bg.jpg);
+    url(/images/contact-bg.webp);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-  color: #fff;
+  color: var(--white-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,9 @@
 }
 
 .contact-bg h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 700;
   padding: 0.4rem 0;
   letter-spacing: 4px;
 }
@@ -26,7 +27,7 @@
 .line div:nth-child(3) {
   height: 3px;
   width: 70px;
-  background: #f7327a;
+  background: var(--red-secondary);
   border-radius: 5px;
 }
 .line {
@@ -36,7 +37,7 @@
 .line div:nth-child(2) {
   width: 10px;
   height: 10px;
-  background: #f7327a;
+  background: var(--red-secondary);
   border-radius: 50%;
 }
 .text {
@@ -55,7 +56,7 @@
   margin: 2rem 0;
   text-align: center;
   padding: 2rem 0;
-  color: #fff;
+  color: var(--white-secondary);
 }
 .contact-info span {
   display: block;
@@ -67,7 +68,7 @@
 .contact-info span .fas {
   font-size: 2rem;
   padding-bottom: 0.9rem;
-  color: #f7327a;
+  color: var(--red-secondary);
 }
 .contact-info div span:nth-child(2) {
   font-weight: 500;
@@ -101,21 +102,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.6rem;
 }
-.send-btn {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #fff;
-  background: #f7327a;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.send-btn:hover {
-  opacity: 0.8;
-}
+
 .contact-form > div img {
   width: 85%;
 }
@@ -125,17 +112,17 @@
 }
 .contact-footer {
   padding: 2rem 0;
-  background: #000;
+  
 }
 .contact-footer h3 {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--white-primary);
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contact-footer p {
-  color: #fff;
+  color: var(--white-tertiary);
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -147,18 +134,18 @@
   text-decoration: none;
   width: 40px;
   height: 40px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--white-secondary);
+  border: 2px solid var(--white-secondary);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.4rem;
-  transition: all 0.4s ease;
+  transition: var(--transition-speed);
 }
 .social-links a:hover {
-  color: #f7327a;
-  border-color: #f7327a;
+  color: var(--red-primary);
+  border-color: var(--red-primary);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,6 +1,6 @@
 
 .service {
-    min-height: 100vh;
+    min-height: var(--header-min-height);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,36 +18,39 @@
     
 }
 
-.service-title h4 {
+.service-title p {
     text-transform: none;
-    color: #f9f0f080;
-    margin-top: 3rem;
-    
+    color: var(--white-tertiary);
+    font-size: 1rem;
+
 }
 
 .service-title h2 {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2rem;
     margin-top: 5rem;
     opacity: 0.95;
-    color: #f0e4e4;
+    color: var(--red-primary);
 }
 
 .service-text {
     padding: 1.4rem 0;
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
+   
 }
 
 .service-item {
     font-size: 1.05rem;
-    background-color: var(--persimmon);
-    color: #fffefe;
+    background-color: var(--white-primary);
+    color: var(--black-primary);
     margin: 2.6rem;
     padding: 1.6rem;
     text-align: center;
     border-radius: 0.2rem;
     cursor: pointer;
-    box-shadow: 0px 2px 5px 0px rgba()68, 68, 68, 0.75;
+    box-shadow: var(--card-box-shadow);
     transform-style: preserve-3d;
 
 }
@@ -63,26 +66,11 @@
     object-fit: cover;
 }
 
-.service-item h4 {
+.service-subtitle {
     margin-top: 0.8rem;
 }
 
-.service-button {
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #313131;
-    background: #fff;
-    border: 2px solid #ffffff;
-    padding: 0.6rem 1.5rem;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    font-size: 0.7rem;
-    
-}
-.service-button:hover {
-    border-color: #151515;
-    background: transparent;
-}
+
 
 
 /*Service page*/

@@ -2,19 +2,19 @@
 .menu-section {
   text-align: center;
   padding: 2rem;
-  min-height: 100vh;
+  min-height: var(--header-min-height);
  
 
-.menu-heading h1 {
+.menu-heading h2 {
   font-size: 2rem;
   margin-top: 4rem;
-  color: #ff7f50;
+  color: var(--red-primary);
 }
 
 .menu-heading p {
   font-size: 1rem;
-  color: #666;
-  margin-top: 1rem;
+  color: var(--white-tertiary);
+ 
 }
 
 .menu-grid {
@@ -27,13 +27,13 @@
 }
 
 .menu-box {
-  background: #fff;
+  background: var(--white-primary);
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: var(--card-border-radius);
   padding: 1rem;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--card-box-shadow);
+  transition: var(--transition-speed);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,36 +45,24 @@
 }
 
 .menu-image {
-  max-width: 100%;
+  max-width: 400px;
+  height: 200px;
   border-radius: 8px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
-.menu-box h2 {
+.menu-box h3 {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
 
 .menu-box p {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--gray-primary);
+  margin-bottom: .5rem;
 }
 
-.menu-box button {
-  background: #ff7f50;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  margin-top: 1rem;
-  align-self: center;
-}
-
-.menu-box button:hover {
-  background: #ff5722;
-}
 
 
 /* Genel Modal Ayarları */
@@ -85,7 +73,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Arkaplan karartması */
+  background: var(--transparent-bg); /* Arkaplan karartması */
   z-index: 9999;
   justify-content: center;
   align-items: center;
@@ -93,8 +81,8 @@
 
 /* Modal İçeriği */
 .modal-content {
-  background: #ffffff; /* Beyaz arkaplan */
-  border-radius: 12px;
+  background: var(--white-secondary); /* Beyaz arkaplan */
+  border-radius: var(--card-border-radius);
   padding: 2rem;
   width: 60%;
   max-height: 80%;
@@ -108,24 +96,24 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #ff7f50;
-  color: #ffffff;
+  background: var(--red-secondary);
+  color: var(--white-secondary);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: var(--card-border-radius);
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .close-btn:hover {
-  background: #ff5722;
+  background: var(--red-primary);
 }
 
 /* Modal Başlık */
 .modal-body h2 {
   font-size: 1.8rem;
-  color: #333333;
+  color: var(--black-primary);
   text-align: center;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #dddddd;
@@ -140,7 +128,7 @@
 }
 
 .modal-body ul li {
-  background: #f9f9f9;
+  background: var(--white-primary);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -158,12 +146,8 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* İkon */
-.modal-body ul li .icon {
-  font-size: 1.5rem;
-  color: #ff7f50; 
-  text-align: center;
-}
+
+
 
 /* İçerik */
 .modal-body ul li .content {
@@ -175,12 +159,12 @@
 .modal-body ul li .content strong {
   font-size: 1rem;
   font-weight: 700;
-  color: #333;
+  color: var(--gray-tertiary);
 }
 
 .modal-body ul li .content small {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--gray-primary);
   margin-top: 5px;
 }
 
@@ -198,7 +182,7 @@
   align-items: center;
   font-size: 1rem;
   font-weight: bold;
-  color: #444;
+  color: var(--gray-secondary);
   gap: 10px; 
   white-space: nowrap;
 }
