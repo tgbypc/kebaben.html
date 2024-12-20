@@ -7,7 +7,7 @@
     <title>Kebaben Sandnes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -37,8 +37,8 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-top">
-        <a href="index.html" class="navbar-logo">
-          <img src="images/kebabenlogo.png" alt="Kebaben Logo" />
+        <a href="./index.html" class="navbar-logo">
+          <img src="./images/kebabenlogo.png" alt="Kebaben Logo" />
         </a>
         <button type="button" class="navbar-toggler">
           <i class="fas fa-bars"></i>
@@ -81,9 +81,10 @@
       <section class="header">
         <!-- bg video -->
         <video autoplay muted loop id="bg-video">
-          <source src="/images/homevideo.mp4" type="video/mp4" />
+          <source src="./images/homevideo.mp4" type="video/mp4" />
+          <!-- I think the captions_en.vtt file is not in the project -->
           <track
-            src="captions_en.vtt"
+            src="./captions_en.vtt"
             kind="captions"
             srclang="en"
             label="english_captions"
@@ -134,9 +135,11 @@
           <div class="video">
             <div class="about-video">
               <video autoplay muted loop>
-                <source src="/images/about-video.mp4" type="video/mp4" />
+                <source src="./images/about-video.mp4" type="video/mp4" />
+                 <!-- I think the captions_en.vtt file is not in the project -->
+
                 <track
-                  src="captions_en.vtt"
+                  src="./captions_en.vtt"
                   kind="captions"
                   srclang="en"
                   label="english_captions"
@@ -145,9 +148,10 @@
             </div>
             <div class="about-video">
               <video autoplay muted loop>
-                <source src="/images/about-brød-video.mp4" type="video/mp4" />
+                <source src="./images/about-brød-video.mp4" type="video/mp4" />
+                <!-- I think the captions_en.vtt file is not in the project -->
                 <track
-                  src="captions_en.vtt"
+                  src="./captions_en.vtt"
                   kind="captions"
                   srclang="en"
                   label="english_captions"
@@ -161,6 +165,7 @@
               <h3>Historien om ekte smak</h3>
               <p>
                 Restauranten ble grunnlagt i
+                <!-- It would be much better to add a class to this (and similar) san elements and style it in CSS -->
                 <span style="color: #ff6f61; font-weight: bold">1992</span>,
                 midt i hjertet av Sandnes, og ble raskt et populært sted for
                 fersk og rask servering. I 2022 ble den overtatt av Durali Celik
@@ -214,8 +219,8 @@
           <!-- Kebab Card -->
           <div class="menu-box" onclick="openPage('kebab')">
             <img
-              src="images/kebabtallerken.webp"
-              alt="Kebab"
+              src="./images/kebabtallerken.webp"
+              alt="Smakfulle kebaber i rull eller på tallerken."
               class="menu-image"
             />
             <h2>Kebab</h2>
@@ -226,8 +231,8 @@
           <!-- Hamburger Card -->
           <div class="menu-box" onclick="openPage('hamburger')">
             <img
-              src="images/hamburger.webp"
-              alt="Hamburger"
+              src="./images/hamburger.webp"
+              alt="Klassiske burgere med ferske ingredienser"
               class="menu-image"
             />
             <h2>Hamburger</h2>
@@ -237,7 +242,7 @@
 
           <!-- Vegan Card -->
           <div class="menu-box" onclick="openPage('vegan')">
-            <img src="images/falafel.webp" alt="Vegan" class="menu-image" />
+            <img src="./images/falafel.webp" alt="Falafel og andre veganske favoritter." class="menu-image" />
             <h2>Vegan</h2>
             <p>Falafel og andre veganske favoritter.</p>
             <button>Se Vegan</button>
@@ -245,7 +250,7 @@
 
           <!-- Tilbehør Card -->
           <div class="menu-box" onclick="openPage('tilbehør')">
-            <img src="images/bonfri.webp" alt="Tilbehør" class="menu-image" />
+            <img src="./images/bonfri.webp" alt="Kompletter måltidet med noe ekstra." class="menu-image" />
             <h2>Tilbehør</h2>
             <p>Kompletter måltidet med noe ekstra.</p>
             <button>Se Tilbehør</button>
@@ -286,7 +291,7 @@
               oss av resten.
             </p>
             <div class="service-img">
-              <img src="images/wolt.webp" alt="wolt logo" />
+              <img src="./images/wolt.webp" alt="wolt logo" />
             </div>
             <a
               href="https://wolt.com/nb/nor/sandnes/restaurant/kebaben-sandnes?srsltid=AfmBOopYb336r6jdpkJnu-uvyvKtaG3oomajal67x_vUrGgH16k7-Odr"
@@ -307,7 +312,7 @@
               adresse
             </p>
             <div class="service-img">
-              <img src="images/foodora.webp" alt="Foodora Logo" />
+              <img src="./images/foodora.webp" alt="Foodora Logo" />
             </div>
             <a
               href="https://www.foodora.no/restaurant/l5j2/sandnes-kebab"
@@ -328,7 +333,7 @@
               og effektivt!
             </p>
             <div class="service-img">
-              <img src="images/takeaway.webp" alt="takeaway" />
+              <img src="./images/takeaway.webp" alt="takeaway" />
             </div>
 
             <span class="service-button">
@@ -352,7 +357,7 @@
             <!--single item -->
 
             <div class="single-item">
-              <img src="images/person2.jpg" alt="customer" />
+              <img src="./images/person2.jpg" alt="customer" />
               <span>David Hall</span>
               <p>
                 Kebaben in Sandnes is a late-night food staple after the bar,
@@ -373,7 +378,7 @@
 
             <!--single item -->
             <div class="single-item">
-              <img src="images/person2.jpg" alt="customer" />
+              <img src="./images/person2.jpg" alt="customer" />
               <span>Tor Magne Steinsvåg</span>
               <p>
                 Som Natteravn opplever at de som jobber der,kommer ut med drikke
@@ -392,7 +397,7 @@
             <!--single item end -->
             <!-- single item -->
             <div class="single-item">
-              <img src="images/person2.jpg" alt="customer" />
+              <img src="./images/person2.jpg" alt="customer" />
               <span>Anders J. Anderssen</span>
               <p>
                 Har du med deg en pyse som ikke torr å smake kebab. Kan du kjøpe
@@ -412,7 +417,7 @@
 
             <!--single item -->
             <div class="single-item">
-              <img src="images/person2.jpg" alt="person image" />
+              <img src="./images/person2.jpg" alt="person image" />
               <span>Michael Ueland</span>
               <p>
                 Dette er Stavangers storste og beste kebab. Har aldri sett
@@ -433,7 +438,7 @@
 
             <!--single item -->
             <div class="single-item">
-              <img src="images/person2.jpg" alt="customer" />
+              <img src="./images/person2.jpg" alt="customer" />
               <span>Daniel Stølsvik Revne</span>
               <p>
                 Jeg skulle ikke ha noe engang og jeg følte meg hjemme. Veldig
@@ -460,7 +465,7 @@
         <h1>Restaurant Blog</h1>
         <section class="blog-list">
           <article class="blog-post">
-            <img src="images/blog1.webp" alt="32 år i Sandnes" />
+            <img src="./images/blog1.webp" alt="32 år i Sandnes" />
             <h2>32 år i Sandnes.Nå vil de åpne i Stavanger.</h2>
             <p>
               <a
@@ -479,7 +484,7 @@
 
           <article class="blog-post">
             <img
-              src="images/blog2.webp"
+              src="./images/blog2.webp"
               alt="Solgte over 2000 kebaber under jubileet mandag"
             />
             <h2>Solgte over 2000 kebaber under jubileet mandag.</h2>
@@ -499,7 +504,7 @@
           </article>
 
           <article class="blog-post">
-            <img src="images/blog3.webp" alt="tvvest video" />
+            <img src="./images/blog3.webp" alt="tvvest video" />
             <h2>Fire samarbeidspartnere til forlenger med de lyseblå!</h2>
             <p>
               <a
@@ -517,7 +522,7 @@
           </article>
 
           <article class="blog-post">
-            <img src="images/blog4.webp" alt="Sandnes Posten" />
+            <img src="./images/blog4.webp" alt="Sandnes Posten" />
             <h2>Ali og Hasan kan servere over et tonn kjøtt i uka</h2>
             <p>
               <a
@@ -535,7 +540,7 @@
           </article>
 
           <article class="blog-post">
-            <img src="images/blog5.webp" alt="Dette er vinnen" />
+            <img src="./images/blog5.webp" alt="Dette er vinnen" />
             <h2>Sandnesposten har testet byens kebaber - Dette er vinneren.</h2>
             <p>
               <a
@@ -553,7 +558,7 @@
           </article>
 
           <article class="blog-post">
-            <img src="images/blog6.webp" alt="Over hele landet" />
+            <img src="./images/blog6.webp" alt="Over hele landet" />
             <h2>Over hele landet skal Sandnes Kebab mette sultne mager.</h2>
             <p>
               <a
@@ -591,64 +596,81 @@
           <div class="contact-info">
             <div>
               <span><i class="fas fa-mobile-alt"></i></span>
-              <span>Telefonnummer.</span>
+              <span>Telefonnummer</span>
+              <!-- Use an anchor tag with tel: link instead of span so the user cna click it and make a call directly element  -->
+              <!-- <a href="tel:51629551">51 62 95 51</a> -->
               <span class="text"> 51 62 95 51</span>
             </div>
             <div>
               <span><i class="fas fa-envelope-open"></i></span>
               <span>E-post</span>
+              <!-- <a href="mailto:kebabensandnes@gmail.com">kebabensandnes@gmail.com</a> -->
               <span class="text">kebabensandnes@gmail.com</span>
             </div>
             <div>
               <span><i class="fas fa-map-marker-alt"></i></span>
               <span>Address</span>
-              <span class="text"
-                >Kirkegata 2, 4307 Sandnes</span
+              <!-- For address, it's goot to use <address> element: https://www.w3schools.com/tags/tag_address.asp -->
+              <span class="text">Kirkegata 2, 4307 Sandnes</span
               >
             </div>
             <div>
               <span><i class="fas fa-clock"></i></span>
               <span>Åpningstider</span>
-              <span class="text">Mandag–Torsdag (11.00–00.00)
-                Fredag–Lørdag (11.00–04.00)
+              <!-- It would be better to display the schedule on multiple lines instead. You can do that by using different elements, e.g. 
+               <div>
+                <span>Mandag–Torsdag (11.00–00.00)</span>
+                <span>Fredag–Lørdag (11.00–04.00)</span>
+                <span>Søndag (11.00–00.00)</span>
+              </div>
+              or at least add <br> tags between the lines as I added below:
+               -->
+              <span class="text">Mandag–Torsdag (11.00–00.00)<br>
+                Fredag–Lørdag (11.00–04.00)<br>
                 Søndag (11.00–00.00)</span>
             </div>
           </div>
 
           <div class="contact-form">
+            <!-- It's very important that all input fields in the form have labels. If you absolutely don't want to add labels, add aria-label attributes -->
             <form>
               <div>
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Fornavn"
+                  aria-label="Fornavn"
                 />
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Etternavn"
+                  aria-label="Etternavn"
                 />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="E-post" />
-                <input type="text" class="form-control" placeholder="Telefon" />
+                <input type="email" class="form-control" placeholder="E-post" aria-label="E-post"/>
+                <input type="text" class="form-control" placeholder="Telefon" aria-label="Telefon"/>
               </div>
               <textarea
                 rows="5"
                 placeholder="Melding"
                 class="form-control"
+                aria-label="Melding"
               ></textarea>
               <input type="submit" class="send-btn" value="send melding" />
             </form>
 
             <div>
-              <img src="images/contact-png.png" alt="contact image" />
+              <img src="./images/contact-png.png" alt="contact image" />
             </div>
           </div>
         </div>
 
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.475849970651!2d5.735692299999998!3d58.8521369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3659c7159d31%3A0xca743f001c305217!2sKebaben!5e1!3m2!1str!2sno!4v1734046417397!5m2!1str!2sno" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></>"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.475849970651!2d5.735692299999998!3d58.8521369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3659c7159d31%3A0xca743f001c305217!2sKebaben!5e1!3m2!1str!2sno!4v1734046417397!5m2!1str!2sno" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <!-- This tag inside iframe looks incorrect, could you verify it in google maps? -->
+            </>"
             width="100%"
             height="450"
             frameborder="0"
@@ -669,6 +691,7 @@
         <h3>Følg Oss</h3>
         <div class="social-links">
           <a href="https://www.facebook.com/profile.php?id=61566582863885" class="fab fa-facebook-f"></a>
+          <!-- Make sure to add link here or skipp adding IG icon -->
           <a href="#" class="fab fa-instagram"></a>
           <a href="mailto:kebabensandnes@gmail.com" class="fas fa-envelope-open"></a>
          
@@ -695,11 +718,11 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="js/tilt.jquery.js"></script>
+    <script src="./js/tilt.jquery.js"></script>
     <!-- service slick slider end-->
-    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
     <!--jQuery reviews-->
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

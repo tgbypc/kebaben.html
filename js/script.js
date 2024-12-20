@@ -452,6 +452,13 @@ function closePage() {
   modal.style.display = "none";
 }
 
+// Close modal when clicked outside
+document.getElementById("modal").addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) {
+    closePage();
+  }
+});
+
 // Reviews  slider
 
 $(document).ready(function(){

@@ -1,3 +1,4 @@
+/* It is possible to import files like this in CSS, however, using an HTML import is faster, so I'd recommend that instead. */
 @import url(/css/service.css);
 @import url(/css/about.css);
 @import url(/css/reviews.css);
@@ -8,16 +9,18 @@
 
 
 *{
+    /* There're a many settings here and not all of them apply to all elements. */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* Move font-family to body selector */
     font-family: 'Nunito', sans-serif;
+    /* Move to ul or(and) ol selectors */
     list-style-type: none;
+    /* Move to 'a' element selector */
     text-decoration: none;
-    outline: none;
-   
-    
-    
+    /* Move to button selector */
+    outline: none;  
 }
 
 :root{
